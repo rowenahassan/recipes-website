@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-white py-0 box-shadow-sm">
+      <div class="container justify-content-md-start py-3 px-4">
+        <!-- Logo -->
+        <div class="navbar-brand d-flex align-items-center py-0">
+          <div
+            class="icon box-shadow-lg rounded-circle d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-utensils text-white text-xl"></i>
+          </div>
+          <div>
+            <h1 class="text-lg fw-bold mb-0">What's For Dinner</h1>
+            <p class="text-xs mb-0">Your daily meal inspiration</p>
+          </div>
+        </div>
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler p-0 border-0 d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <i
+            class="fa-solid fa-bars text-2xl w-auto h-auto"
+            style="color: #4a5565"
+          ></i>
+        </button>
+        <!-- Collapse menu -->
+        <div
+          class="collapse navbar-collapse d-md-block mt-md-0 py-md-0 mt-3 py-3"
+          id="navbarSupportedContent"
+        >
+          <div
+            class="navbar-buttons d-md-flex flex-md-row justify-content-md-end align-items-md-center pt-md-0 ms-md-auto flex-md-grow-0 d-flex flex-column"
+          >
+            <button
+              class="nav-link d-flex align-items-center mb-3 mb-md-0 me-md-4"
+            >
+              <i class="fa-solid fa-bookmark text-xl w-auto me-md-0"></i>
+              <span class="d-md-none">Saved Recipes</span>
+            </button>
+            <button
+              class="nav-link d-flex align-items-center mb-3 mb-md-0 me-md-4"
+            >
+              <i
+                class="fa-solid fa-clock-rotate-left text-xl w-auto me-md-0"
+              ></i>
+              <span class="d-md-none">Recent</span>
+            </button>
+            <button
+              class="nav-link d-flex align-items-center mb-3 mb-md-0 me-md-4"
+            >
+              <i class="fa-solid fa-gear text-xl w-auto me-md-0"></i>
+              <span class="d-md-none">Settings</span>
+            </button>
+            <button class="nav-link d-flex align-items-center">
+              <img
+                src="./images/avatar-4.jpg"
+                alt="profile image"
+                class="rounded-circle me-md-0"
+              />
+              <span class="d-md-none">Profile</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main id="main-content" class="container px-4">
+      <section
+        id="recipe-display"
+        class="bg-white overflow-hidden box-shadow-xl"
+      >
+        <div class="row gap-0 mx-0">
+          <div class="col-lg-5 px-0 overflow-hidden position-relative">
+            <img
+              id="recipe-img"
+              class="w-100 h-100 object-fit-cover"
+              src=""
+              alt=""
+            />
+            <div
+              class="rating position-absolute bg-white rounded-pill py-2 px-3 box-shadow-lg"
+            >
+              <div class="d-flex align-items-center">
+                <i
+                  class="fa-solid fa-star text-sm me-2"
+                  style="color: #fdc700"
+                ></i>
+                <span
+                  id="recipe-rating"
+                  class="recipe-rating fw-semibold text-sm me-2"
+                ></span>
+                <span id="recipe-review" class="recipe-review text-xs"></span>
+              </div>
+            </div>
+            <div class="times position-absolute box-shadow-lg rounded-4 p-md-4">
+              <div class="row row-cols-3 text-center gap-3 mx-0">
+                <div class="prep-time col px-0">
+                  <i
+                    class="fa-solid fa-clock text-lg"
+                    style="color: #ff6900"
+                  ></i>
+                  <p class="text-xs mb-0">Prep Time</p>
+                  <p id="prep-time" class="fw-bold text-sm mb-0"></p>
+                </div>
+                <div class="cook-time col px-0">
+                  <i
+                    class="fa-solid fa-fire-burner text-lg"
+                    style="color: #fb2c36"
+                  ></i>
+                  <p class="text-xs mb-0">Cook Time</p>
+                  <p id="cook-time" class="fw-bold text-sm mb-0"></p>
+                </div>
+                <div class="servings col px-0">
+                  <i
+                    class="fa-solid fa-users text-lg"
+                    style="color: #2b7fff"
+                  ></i>
+                  <p class="text-xs mb-0">Servings</p>
+                  <p id="servings" class="fw-bold text-sm mb-0"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 h-100 overflow-y-auto">
+            <div
+              class="top d-flex flex-column flex-md-row align-items-start justify-content-between mb-4"
+            >
+              <div>
+                <div class="badges d-flex align-items-center">
+                  <span
+                    id="difficulty-badge"
+                    class="difficulty-badge rounded-pill text-xs fw-semibold"
+                  ></span>
+                  <span
+                    id="category-badge"
+                    class="category-badge rounded-pill text-xs fw-semibold"
+                  ></span>
+                </div>
+                <h2
+                  id="recipe-name"
+                  class="recipe-name text-2xl fw-bold mb-2"
+                ></h2>
+                <p
+                  id="recipe-description"
+                  class="recipe-description text-sm mb-0"
+                ></p>
+              </div>
+              <div
+                class="order-md-0 d-flex align-self-end align-self-md-center"
+              >
+                <button
+                  class="d-flex align-items-center justify-content-center me-2 p-0"
+                >
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+                <button
+                  class="d-flex align-items-center justify-content-center p-0"
+                >
+                  <i class="fa-solid fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+            <div id="time-warning" class="time-warning p-3 mb-4 rounded-3">
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-triangle-exclamation text-xl"></i>
+                <div>
+                  <p class="fw-semibold text-sm mb-0">
+                    Extended Preparation Time
+                  </p>
+                  <p class="text-xs mb-0">
+                    This recipe requires more than 45 minutes to prepare. Plan
+                    accordingly!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="nav nav-pills row row-cols-4 mx-0 mb-4 p-3"
+              id="pills-tab"
+              role="tablist"
+            >
+              <button
+                class="nav-item nav-link active p-0 pb-2 fw-semibold text-xs d-flex align-items-center justify-content-center"
+                role="presentation"
+                id="pills-ingredients-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-ingredients"
+                type="button"
+                role="tab"
+                aria-controls="pills-ingredients"
+                aria-selected="true"
+              >
+                <i
+                  class="fa-solid fa-list-check me-1 me-md-2 flex-shrink-0"
+                ></i>
+                <span>Ingredients</span>
+              </button>
+              <button
+                class="nav-item nav-link p-0 pb-2 fw-semibold text-xs d-flex align-items-center justify-content-center"
+                role="presentation"
+                id="pills-instructions-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-instructions"
+                type="button"
+                role="tab"
+                aria-controls="pills-instructions"
+                aria-selected="false"
+              >
+                <i class="fa-solid fa-book-open me-1 me-md-2 flex-shrink-0"></i>
+                <span>Instructions</span>
+              </button>
+              <button
+                class="nav-item nav-link p-0 pb-2 fw-semibold text-xs d-flex align-items-center justify-content-center"
+                role="presentation"
+                id="pills-nutrition-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-nutrition"
+                type="button"
+                role="tab"
+                aria-controls="pills-nutrition"
+                aria-selected="false"
+              >
+                <i class="fa-solid fa-chart-pie me-1 me-md-2 flex-shrink-0"></i>
+                <span>Nutrition</span>
+              </button>
+              <button
+                class="nav-item nav-link p-0 pb-2 fw-semibold text-xs d-flex align-items-center justify-content-center"
+                role="presentation"
+                id="pills-tips-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-tips"
+                type="button"
+                role="tab"
+                aria-controls="pills-tips"
+                aria-selected="false"
+              >
+                <i class="fa-solid fa-lightbulb me-1 me-md-2 flex-shrink-0"></i>
+                <span>Chef's Tips</span>
+              </button>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active overflow-y-auto"
+                id="pills-ingredients"
+                role="tabpanel"
+                aria-labelledby="pills-ingredients-tab"
+                tabindex="0"
+              >
+                <div class="ingredients-content p-4">
+                  <ul id="ingredients-list"></ul>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade overflow-y-auto"
+                id="pills-instructions"
+                role="tabpanel"
+                aria-labelledby="pills-instructions-tab"
+                tabindex="0"
+              >
+                <div id="instructions-list"></div>
+              </div>
+              <div
+                class="tab-pane fade overflow-y-auto"
+                id="pills-nutrition"
+                role="tabpanel"
+                aria-labelledby="pills-nutrition-tab"
+                tabindex="0"
+              >
+                <div
+                  class="nutrition-content row mx-0 row-cols-1 row-cols-md-2 gap-3"
+                >
+                  <div
+                    class="col d-flex align-items-center justify-content-between p-3"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="nutrition-icon bg-orange d-flex align-items-center justify-content-center rounded-3"
+                      >
+                        <i class="fa-solid fa-fire" style="color: #f54a00"></i>
+                      </div>
+                      <span class="fw-medium text-xs">Calories</span>
+                    </div>
+                    <span
+                      id="calories-value"
+                      class="calories-value text-base fw-bold"
+                    ></span>
+                  </div>
+                  <div
+                    class="col d-flex align-items-center justify-content-between p-3"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="nutrition-icon bg-blue d-flex align-items-center justify-content-center rounded-3"
+                      >
+                        <i
+                          class="fa-solid fa-dumbbell"
+                          style="color: #155dfc"
+                        ></i>
+                      </div>
+                      <span class="fw-medium text-xs">Protein</span>
+                    </div>
+                    <span
+                      id="protein-value"
+                      class="protein-value text-base fw-bold"
+                    ></span>
+                  </div>
+                  <div
+                    class="col d-flex align-items-center justify-content-between p-3"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="nutrition-icon bg-yellow d-flex align-items-center justify-content-center rounded-3"
+                      >
+                        <i
+                          class="fa-solid fa-wheat-awn"
+                          style="color: #d08700"
+                        ></i>
+                      </div>
+                      <span class="fw-medium text-xs">Carbohydrates</span>
+                    </div>
+                    <span
+                      id="carbs-value"
+                      class="carbs-value text-base fw-bold"
+                    ></span>
+                  </div>
+                  <div
+                    class="col d-flex align-items-center justify-content-between p-3"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="nutrition-icon bg-red d-flex align-items-center justify-content-center rounded-3"
+                      >
+                        <i
+                          class="fa-solid fa-droplet"
+                          style="color: #e7000b"
+                        ></i>
+                      </div>
+                      <span class="fw-medium text-xs">Fat</span>
+                    </div>
+                    <span
+                      id="fat-value"
+                      class="fat-value text-base fw-bold"
+                    ></span>
+                  </div>
+                  <div
+                    class="col d-flex align-items-center justify-content-between p-3"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="nutrition-icon bg-green d-flex align-items-center justify-content-center rounded-3"
+                      >
+                        <i
+                          class="fa-solid fa-seedling"
+                          style="color: #00a63e"
+                        ></i>
+                      </div>
+                      <span class="fw-medium text-xs">Fiber</span>
+                    </div>
+                    <span
+                      id="fiber-value"
+                      class="fiber-value text-base fw-bold"
+                    ></span>
+                  </div>
+                  <div
+                    class="col d-flex align-items-center justify-content-between p-3"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="nutrition-icon bg-pink d-flex align-items-center justify-content-center rounded-3"
+                      >
+                        <i class="fa-solid fa-cube" style="color: #e60076"></i>
+                      </div>
+                      <span class="fw-medium text-xs">Sodium</span>
+                    </div>
+                    <span
+                      id="sodium-value"
+                      class="sodium-value text-base fw-bold"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade overflow-y-auto"
+                id="pills-tips"
+                role="tabpanel"
+                aria-labelledby="pills-tips-tab"
+                tabindex="0"
+              >
+                <div id="tips-list" class="tips-list"></div>
+              </div>
+            </div>
+            <div class="try-another d-flex align-items-center pt-4 border-top">
+              <button
+                id="try-another-btn"
+                class="try-another-btn text-white py-2 px-3 fw-semibold box-shadow-lg text-sm border-0"
+                onclick="tryAnotherRecipe()"
+              >
+                <i class="fa-solid fa-rotate me-1 me-md-2"></i>Try Another
+                Recipe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

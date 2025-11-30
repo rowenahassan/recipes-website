@@ -1,0 +1,74 @@
+@media screen and (min-width: 768px) {
+  /*      Navbat      */
+  h1 {
+    font-size: 24px !important;
+    line-height: 1.33333 !important;
+  }
+  nav .navbar-brand p {
+    font-size: 14px;
+    line-height: 1.42857;
+  }
+  .navbar-collapse {
+    border-top: none;
+  }
+  .navbar-buttons button img {
+    width: 40px;
+    height: 40px;
+  }
+  /*     Main Content     */
+  .rating i,
+  .recipe-rating,
+  .times .row .col p.text-sm,
+  .time-warning div div p:first-child,
+  .nav-pills .nav-link,
+  .nutrition-content .col div span,
+  .try-another-btn {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .recipe-review,
+  .times .row .col p.text-xs,
+  .time-warning div div p:last-child {
+    font-size: 14px;
+    line-height: 1.42857;
+  }
+  .times .row .col i {
+    font-size: 24px;
+    line-height: 1.33333;
+  }
+  .col-lg-7 .top h2 {
+    font-size: 36px;
+    line-height: 1.11111;
+  }
+  .recipe-description {
+    font-size: 18px;
+    line-height: 1.55556;
+  }
+  .nutrition-content .col {
+    max-width: calc(50% - 8px);
+  }
+  .calories-value,
+  .protein-value,
+  .carbs-value,
+  .fat-value,
+  .fiber-value,
+  .sodium-value {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .try-another-btn {
+    padding: 12px 24px !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  /*     Main Content     */
+  section .row.gap-0 {
+    height: 750px;
+  }
+  .row .col-lg-5 {
+    height: 100%;
+  }
+  .row .col-lg-7 {
+    padding: 40px;
+  }
+}

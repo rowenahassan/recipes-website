@@ -1,0 +1,323 @@
+/*          Global Style           */
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-image: linear-gradient(
+    to bottom right in oklab,
+    #fff7ed 0%,
+    #fffbeb 50%,
+    #fefce8 100%
+  );
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.text-xs {
+  font-size: 12px;
+  line-height: 1.33333;
+}
+.text-sm {
+  font-size: 14px;
+  line-height: 1.42857;
+}
+.text-base {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.text-lg {
+  font-size: 18px;
+  line-height: 1.55556;
+}
+.text-xl {
+  font-size: 20px;
+  line-height: 1.4;
+}
+.text-2xl {
+  font-size: 24px;
+  line-height: 1.33333;
+}
+.box-shadow-sm {
+  box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+}
+.box-shadow-lg {
+  box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+}
+.box-shadow-xl {
+  box-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+}
+/*                  Navbar                   */
+nav {
+  border-bottom: 1px solid #ffedd4;
+}
+.container {
+  max-width: 1280px;
+}
+nav .navbar-brand .icon {
+  margin-right: 12px;
+  width: 48px;
+  height: 48px;
+  background-image: linear-gradient(to bottom right in oklab, #ff6900, #fb2c36);
+}
+h1 {
+  color: #101828;
+}
+nav .navbar-brand p {
+  color: #6a7282;
+}
+.navbar-toggler {
+  transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar-toggler:hover i,
+.navbar-buttons button:hover {
+  color: #f54a00 !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-collapse {
+  border-top: 1px solid #ffedd4;
+}
+.navbar-buttons button {
+  color: #4a5565;
+  cursor: pointer;
+  transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar-buttons button i {
+  margin-right: 12px;
+}
+.navbar-buttons button img {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #ffb86a;
+  margin-right: 12px;
+}
+/*     Main Content     */
+main.container {
+  padding-block: 32px;
+}
+section {
+  border-radius: 24px;
+  margin-bottom: 32px;
+  border: 1px solid #ffedd4;
+}
+.row .col-lg-5 {
+  height: 400px;
+}
+.rating {
+  top: 24px;
+  left: 24px;
+}
+.recipe-rating {
+  color: #101828;
+}
+.recipe-review {
+  color: #6a7282;
+}
+.times {
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  background-color: #fffffff2;
+  backdrop-filter: blur(8px);
+  padding: 12px;
+}
+.times .row .col {
+  max-width: calc(33.33% - 10.67px);
+}
+.times .row .col p.text-xs {
+  color: #6a7282;
+}
+.times .row .col p.text-sm {
+  color: #101828;
+}
+.row .col-lg-7 {
+  padding: 20px;
+}
+.row .col-lg-7 .top {
+  gap: 20px;
+}
+.col-lg-7 .top .badges {
+  margin-bottom: 12px;
+}
+.difficulty-badge {
+  background-color: #dcfce7;
+  color: #008236;
+  padding: 4px 12px;
+  margin-right: 12px;
+}
+.category-badge {
+  background-color: #dbeafe;
+  color: #1447e6;
+  padding: 4px 12px;
+}
+.col-lg-7 .top div:last-child {
+  order: -1;
+}
+.col-lg-7 .top h2 {
+  color: #101828;
+}
+.recipe-description {
+  color: #4a5565;
+}
+.col-lg-7 .top .order-md-0 button {
+  width: 48px;
+  height: 48px;
+  background-color: #ffedd4;
+  color: #f54a00;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.col-lg-7 .top .order-md-0 button:hover {
+  background-color: #ffd7a8;
+}
+.time-warning {
+  background-color: #fef2f2;
+  border-left: 4px solid #fb2c36;
+}
+.time-warning i {
+  margin-right: 12px;
+  color: #fb2c36;
+}
+.time-warning div div p:first-child {
+  color: #9f0712;
+}
+.time-warning div div p:last-child {
+  color: #e7000b;
+}
+.nav-pills {
+  border-bottom: 1px solid #ebe6e7;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #f54a00;
+  background-color: transparent;
+  border-bottom: 2px solid #f54a00;
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #6a7282;
+}
+.nav-pills .nav-link:hover {
+  color: #364153;
+}
+.nav-pills button:first-child:hover {
+  color: #6a7282;
+}
+.nav-pills button:first-child.active:hover {
+  color: #f54a00;
+}
+.nav-pills button span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tab-content .tab-pane {
+  height: 350px;
+}
+#recipe-display .overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: #fe886a4d transparent;
+}
+.ingredients-content {
+  border-radius: 16px;
+  background-image: linear-gradient(to bottom right in oklab, #fff7ed, #fffbeb);
+}
+.ingredients-content li {
+  margin-bottom: 12px;
+}
+.ingredients-content li .number {
+  width: 24px;
+  height: 24px;
+  background-color: #ff6900;
+  margin-top: 2px;
+  margin-right: 12px;
+}
+.ingredients-content li span {
+  color: #364153;
+}
+.steps .number {
+  width: 48px;
+  height: 48px;
+  background-color: #ff6900;
+  border-radius: 16px;
+  margin-top: 2px;
+  margin-right: 12px;
+}
+.step {
+  flex: 1;
+}
+.step p {
+  color: #364153;
+}
+.nutrition-content .col {
+  background-color: #fbf9fa;
+  border-radius: 12px;
+}
+.nutrition-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+.nutrition-icon.bg-orange {
+  background-color: #ffedd4;
+}
+.nutrition-icon.bg-blue {
+  background-color: #dbeafe;
+}
+.nutrition-icon.bg-yellow {
+  background-color: #fef9c2;
+}
+.nutrition-icon.bg-red {
+  background-color: #ffe2e2;
+}
+.nutrition-icon.bg-green {
+  background-color: #dcfce7;
+}
+.nutrition-icon.bg-pink {
+  background-color: #fce7f3;
+}
+.nutrition-content .col div span {
+  color: #364153;
+}
+.calories-value,
+.protein-value,
+.carbs-value,
+.fat-value,
+.fiber-value,
+.sodium-value {
+  color: #101828;
+}
+.tips-list div {
+  background-color: #fffbeb;
+  border-radius: 12px;
+  border-left: 4px solid #ffb900;
+}
+.tips-list i {
+  margin-right: 12px;
+}
+.try-another {
+  margin-top: 32px;
+  border-color: #ebe6e7;
+}
+.try-another-btn {
+  background-image: linear-gradient(to right in oklab, #ff6900, #fb2c36);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.try-another-btn:hover {
+  background-image: linear-gradient(#f54a00, #e7000b);
+  box-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+  transform: scale(1.05, 1.05);
+}
