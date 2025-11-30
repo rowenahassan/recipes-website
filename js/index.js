@@ -2,7 +2,7 @@ let recipes = [
   {
     name: "French Onion Soup",
     description: "Rich beef broth with caramelized onions and melted cheese",
-    imageSrc: "../images/photo-1547592166-23ac45744acd.jfif",
+    imageSrc: "images/photo-1547592166-23ac45744acd.jfif",
     imageAlt: "french onion soup",
     rating: 4.7,
     reviews: 267,
@@ -47,7 +47,7 @@ let recipes = [
   {
     name: "Thai Green Curry",
     description: "Vibrant and aromatic curry with vegetables and coconut milk",
-    imageSrc: "../images/photo-1455619452474-d2be8b1e70cd.jfif",
+    imageSrc: "images/photo-1455619452474-d2be8b1e70cd.jfif",
     imageAlt: "thai green curry",
     rating: 4.7,
     reviews: 312,
@@ -93,7 +93,7 @@ let recipes = [
   {
     name: "Classic Beef Burger",
     description: "Juicy homemade burger with all the fixings",
-    imageSrc: "../images/photo-1568901346375-23c9450c58cd.jfif",
+    imageSrc: "images/photo-1568901346375-23c9450c58cd.jfif",
     imageAlt: "classic beef burger",
     rating: 4.6,
     reviews: 421,
@@ -138,7 +138,7 @@ let recipes = [
   {
     name: "Vegetable Curry",
     description: "Hearty vegetarian curry with coconut milk",
-    imageSrc: "../images/photo-1585032226651-759b368d7246.jfif",
+    imageSrc: "images/photo-1585032226651-759b368d7246.jfif",
     imageAlt: "vegetable curry",
     rating: 4.6,
     reviews: 289,
@@ -184,7 +184,7 @@ let recipes = [
   {
     name: "BBQ Pulled Pork",
     description: "Slow-cooked tender pork in smoky barbecue sauce",
-    imageSrc: "../images/photo-1529692236671-f1f6cf9683ba.jfif",
+    imageSrc: "images/photo-1529692236671-f1f6cf9683ba.jfif",
     imageAlt: "bbq pulled pork",
     rating: 4.7,
     reviews: 412,
@@ -229,7 +229,7 @@ let recipes = [
   {
     name: "Shrimp Scampi",
     description: "Garlicky shrimp in white wine butter sauce",
-    imageSrc: "../images/photo-1633504581786-316c8002b1b9.jfif",
+    imageSrc: "images/photo-1633504581786-316c8002b1b9.jfif",
     imageAlt: "shrimp scampi",
     rating: 4.8,
     reviews: 356,
@@ -275,7 +275,7 @@ let recipes = [
   {
     name: "Chicken Stir-Fry",
     description: "Quick and healthy stir-fry with colorful vegetables",
-    imageSrc: "../images/photo-1603133872878-684f208fb84b.jfif",
+    imageSrc: "images/photo-1603133872878-684f208fb84b.jfif",
     imageAlt: "chicken stir-fry",
     rating: 4.5,
     reviews: 324,
@@ -321,7 +321,7 @@ let recipes = [
   {
     name: "Caesar Salad",
     description: "Classic salad with crispy romaine and creamy dressing",
-    imageSrc: "../images/photo-1546793665-c74683f339c1.jfif",
+    imageSrc: "images/photo-1546793665-c74683f339c1.jfif",
     imageAlt: "caesar salad",
     rating: 4.4,
     reviews: 198,
@@ -365,7 +365,7 @@ let recipes = [
   {
     name: "Teriyaki Chicken Bowl",
     description: "Sweet and savory chicken over rice with vegetables",
-    imageSrc: "../images/photo-1546069901-eacef0df6022.jfif",
+    imageSrc: "images/photo-1546069901-eacef0df6022.jfif",
     imageAlt: "teriyaki chicken bowl",
     rating: 4.7,
     reviews: 367,
@@ -410,7 +410,7 @@ let recipes = [
   {
     name: "Mediterranean Quinoa Bowl",
     description: "Healthy bowl with quinoa, vegetables, and tahini dressing",
-    imageSrc: "../images/photo-1546069901-ba9599a7e63c.jfif",
+    imageSrc: "images/photo-1546069901-ba9599a7e63c.jfif",
     imageAlt: "mediterranean quinoa bowl",
     rating: 4.5,
     reviews: 156,
@@ -455,7 +455,7 @@ let recipes = [
   {
     name: "Lasagna Bolognese",
     description: "Layered Italian pasta with rich meat sauce and béchamel",
-    imageSrc: "../images/photo-1574894709920-11b28e7367e3.jfif",
+    imageSrc: "images/photo-1574894709920-11b28e7367e3.jfif",
     imageAlt: "lasagna bolognese",
     rating: 4.9,
     reviews: 478,
@@ -501,7 +501,7 @@ let recipes = [
   {
     name: "Beef Tacos",
     description: "Flavorful Mexican tacos with seasoned ground beef",
-    imageSrc: "../images/photo-1565299585323-38d6b0865b47.jfif",
+    imageSrc: "images/photo-1565299585323-38d6b0865b47.jfif",
     imageAlt: "beef tacos",
     rating: 4.6,
     reviews: 278,
@@ -547,7 +547,7 @@ let recipes = [
   {
     name: "Margherita Pizza",
     description: "Classic Italian pizza with fresh mozzarella and basil",
-    imageSrc: "../images/photo-1574071318508-1cdbab80d002.jfif",
+    imageSrc: "images/photo-1574071318508-1cdbab80d002.jfif",
     imageAlt: "margherita pizza",
     rating: 4.9,
     reviews: 512,
@@ -592,7 +592,7 @@ let recipes = [
   {
     name: "Chicken Tikka Masala",
     description: "Rich and creamy Indian curry with tender chicken pieces",
-    imageSrc: "../images/photo-1565557623262-b51c2513a641.jfif",
+    imageSrc: "images/photo-1565557623262-b51c2513a641.jfif",
     imageAlt: "chicken tikka masala",
     rating: 4.7,
     reviews: 389,
@@ -638,7 +638,7 @@ let recipes = [
   {
     name: "Greek Moussaka",
     description: "Traditional layered eggplant casserole with lamb",
-    imageSrc: "../images/photo-1601050690597-df0568f70950.jfif",
+    imageSrc: "images/photo-1601050690597-df0568f70950.jfif",
     imageAlt: "greek moussaka",
     rating: 4.8,
     reviews: 234,
@@ -684,7 +684,7 @@ let recipes = [
   {
     name: "Honey Garlic Salmon",
     description: "Pan-seared salmon with a sweet and savory glaze",
-    imageSrc: "../images/photo-1467003909585-2f8a72700288.jfif",
+    imageSrc: "images/photo-1467003909585-2f8a72700288.jfif",
     imageAlt: "honey garlic salmon",
     rating: 4.9,
     reviews: 187,
@@ -729,7 +729,7 @@ let recipes = [
   {
     name: "Pad Thai",
     description: "Popular Thai stir-fried noodles with shrimp and peanuts",
-    imageSrc: "../images/photo-1559314809-0d155014e29e.jfif",
+    imageSrc: "images/photo-1559314809-0d155014e29e.jfif",
     imageAlt: "pad thai",
     rating: 4.8,
     reviews: 445,
@@ -775,7 +775,7 @@ let recipes = [
   {
     name: "Caprese Sandwich",
     description: "Fresh Italian sandwich with mozzarella, tomato, and basil",
-    imageSrc: "../images/photo-1509722747041-616f39b57569.jfif",
+    imageSrc: "images/photo-1509722747041-616f39b57569.jfif",
     imageAlt: "caprese sandwich",
     rating: 4.5,
     reviews: 189,
@@ -820,7 +820,7 @@ let recipes = [
   {
     name: "Creamy Spaghetti Carbonara",
     description: "A classic Italian pasta dish with eggs, cheese, and pancetta",
-    imageSrc: "../images/photo-1612874742237-6526221588e3.jfif",
+    imageSrc: "images/photo-1612874742237-6526221588e3.jfif",
     imageAlt: "creamy spaghetti carbonara",
     rating: 4.8,
     reviews: 234,
